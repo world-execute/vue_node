@@ -27,6 +27,6 @@ const ProfileSchema = new Schema({
         type:Date,
         default:Date.now()
     },
-},{versionKey:false})
+},{versionKey:false})  // versionKey设置为false则文档不会添加版本号
 
 module.exports = Profile = mongoose.model('Profile',ProfileSchema);
